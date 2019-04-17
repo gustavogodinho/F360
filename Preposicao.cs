@@ -65,6 +65,7 @@ namespace Klingon
                 if (palavra.Substring(palavra.Length - 1, 1) == li[i])
                 {
                     retorno = true;
+                    break;
                 }
                 else
                 {
