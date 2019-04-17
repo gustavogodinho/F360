@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace KlingonVerbos
 {
@@ -8,11 +9,13 @@ namespace KlingonVerbos
         static void Main(string[] args)
         {
             string[] lines = System.IO.File.ReadAllLines(@"C:\Work\Financas360\textoB.txt");
+            string[] linesNotDup = lines.Distinct().ToArray();
+
             string[] Words;
             int countVerbo = 0;
             int countVerboPri = 0;
 
-            foreach (string line in lines)
+            foreach (string line in linesNotDup)
             {
                 Words = line.Split(' ');
 
