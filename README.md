@@ -9,7 +9,7 @@
 * NumeroBonito.cs
 
 
-- > texto b
+ texto b
 Preposição: 61
 Verbos: 30
 Primeira Pessoa: 25
