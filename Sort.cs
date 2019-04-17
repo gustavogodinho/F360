@@ -30,7 +30,7 @@ namespace KlingonShort
                         {
                             if (palavra[0] == chave[nLetra])
                             {
-                                Console.WriteLine(palavra);
+                                Console.WriteLine(palavra.Replace("\n", "").Replace("\r", " ")); 
                             }
                         }
                     }
