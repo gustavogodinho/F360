@@ -46,7 +46,7 @@ namespace Klingon
                 "b",
                 "r",
                 "q",
-                "d",
+               // "d",
                 "n",
                 "x",
                 "j",
@@ -68,7 +68,7 @@ namespace Klingon
                 }
                 else
                 {
-                    retorno = false;
+                  
                 }
             }
             return retorno;
