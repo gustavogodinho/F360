@@ -3,32 +3,29 @@ using System.Collections.Generic;
 
 namespace KlingonShort
 {
-    class Sort
-    {
         public class KlingonSort
         {
             public static void Main()
             {
-                string[] lines = System.IO.File.ReadAllLines(@"C:\Work\Financas360\textoB.txt");
-                PrintPalavrasOrdenadas1(lines);          
+                string[] Lines = System.IO.File.ReadAllLines(@"C:\Work\Financas360\textoB.txt");
+                PrintPalavrasOrdenadas(Lines);          
 
             }
 
-            private static void PrintPalavrasOrdenadas1(string[] lines)
+            private static void PrintPalavrasOrdenadas(string[] lines)
             {
-                string chave = "kbwrqdnfxjmlvhtcgzps";
-
+                string ordem = "kbwrqdnfxjmlvhtcgzps";
                 string[] ListPalavras;
 
                 foreach (string line in lines)
                 {
                     ListPalavras = line.Split(' ');
 
-                    for (int nLetra = 0; nLetra < chave.Length; nLetra++)
+                    for (int nLetra = 0; nLetra < ordem.Length; nLetra++)
                     {
                         foreach (string palavra in ListPalavras)
                         {
-                            if (palavra[0] == chave[nLetra])
+                            if (palavra[0] == ordem[nLetra])
                             {
                                 Console.WriteLine(palavra.Replace("\n", "").Replace("\r", " ")); 
                             }
@@ -37,8 +34,6 @@ namespace KlingonShort
                 }
                 Console.ReadKey();
             }
-
         }
     }
 
-}
